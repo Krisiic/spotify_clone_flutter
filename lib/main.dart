@@ -45,24 +45,8 @@ class MyApp extends StatelessWidget {
         ),
         body: Column(
           children: <Widget>[
-            Container(
-              decoration: BoxDecoration(
-                gradient: LinearGradient(
-                  begin: Alignment.topLeft,
-                  end: Alignment.bottomRight,
-                  colors: [
-                    Colors.white,
-                    Colors.black,
-                  ],
-                ),
-              ),
-              child: Column(
-                children: [
-                  HeaderNavbar(),
-                  RecentlyPlayed(),
-                ],
-              ),
-            ),
+            HeaderNavbar(),
+            RecentlyPlayed(),
             Recommended(),
             Artists(),
           ],
