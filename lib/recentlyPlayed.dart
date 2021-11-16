@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
 
-class RecentlyPlayed extends StatelessWidget {
+class RecentlyPlayed extends StatefulWidget {
+  @override
+  _RecentlyPlayedState createState() => _RecentlyPlayedState();
+}
+
+class _RecentlyPlayedState extends State<RecentlyPlayed> {
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -32,13 +37,16 @@ class RecentlyPlayed extends StatelessWidget {
                       height: 60,
                     ),
                     Container(
-                      padding: EdgeInsets.only(right: 60, left: 10),
-                      child: Text(
-                        'Playlist',
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 16,
+                      padding: EdgeInsets.only(right: 49, left: 10),
+                      child: TextButton(
+                        onPressed: null,
+                        child: Text(
+                          'Chill',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 16,
+                          ),
                         ),
                       ),
                     ),
@@ -55,13 +63,16 @@ class RecentlyPlayed extends StatelessWidget {
                       height: 60,
                     ),
                     Container(
-                      padding: EdgeInsets.only(right: 60, left: 10),
-                      child: Text(
-                        'Playlist',
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 16,
+                      padding: EdgeInsets.only(right: 49, left: 10),
+                      child: TextButton(
+                        onPressed: null,
+                        child: Text(
+                          'Tape',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 16,
+                          ),
                         ),
                       ),
                     ),
@@ -82,13 +93,16 @@ class RecentlyPlayed extends StatelessWidget {
                       height: 60,
                     ),
                     Container(
-                      padding: EdgeInsets.only(right: 60, left: 10),
-                      child: Text(
-                        'Playlist',
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 16,
+                      padding: EdgeInsets.only(right: 49, left: 10),
+                      child: TextButton(
+                        onPressed: null,
+                        child: Text(
+                          'Palm',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 16,
+                          ),
                         ),
                       ),
                     ),
@@ -105,13 +119,16 @@ class RecentlyPlayed extends StatelessWidget {
                       height: 60,
                     ),
                     Container(
-                      padding: EdgeInsets.only(right: 60, left: 10),
-                      child: Text(
-                        'Playlist',
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 16,
+                      padding: EdgeInsets.only(right: 49, left: 10),
+                      child: TextButton(
+                        onPressed: null,
+                        child: Text(
+                          'Hills',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 16,
+                          ),
                         ),
                       ),
                     ),
