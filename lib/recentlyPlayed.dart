@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 
 import './screens/recently_played_playlists/chill.dart';
+import './screens/recently_played_playlists/hills.dart';
+import './screens/recently_played_playlists/palm.dart';
+import './screens/recently_played_playlists/tape.dart';
 
 class RecentlyPlayed extends StatefulWidget {
   @override
@@ -8,10 +11,32 @@ class RecentlyPlayed extends StatefulWidget {
 }
 
 class _RecentlyPlayedState extends State<RecentlyPlayed> {
+  //Navigation Button Functions
   _chillButton() {
     Navigator.push(
       context,
       MaterialPageRoute(builder: (context) => Chill()),
+    );
+  }
+
+  _hillsButton() {
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => Hills()),
+    );
+  }
+
+  _palmButton() {
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => Palm()),
+    );
+  }
+
+  _tapeButton() {
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => Tape()),
     );
   }
 
@@ -74,7 +99,7 @@ class _RecentlyPlayedState extends State<RecentlyPlayed> {
                     Container(
                       padding: EdgeInsets.only(right: 49, left: 10),
                       child: TextButton(
-                        onPressed: null,
+                        onPressed: _tapeButton,
                         child: Text(
                           'Tape',
                           style: TextStyle(
@@ -104,7 +129,7 @@ class _RecentlyPlayedState extends State<RecentlyPlayed> {
                     Container(
                       padding: EdgeInsets.only(right: 49, left: 10),
                       child: TextButton(
-                        onPressed: null,
+                        onPressed: _palmButton,
                         child: Text(
                           'Palm',
                           style: TextStyle(
@@ -130,7 +155,7 @@ class _RecentlyPlayedState extends State<RecentlyPlayed> {
                     Container(
                       padding: EdgeInsets.only(right: 49, left: 10),
                       child: TextButton(
-                        onPressed: _chillButton,
+                        onPressed: _hillsButton,
                         child: Text(
                           'Hills',
                           style: TextStyle(
