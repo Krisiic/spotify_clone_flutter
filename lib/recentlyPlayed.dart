@@ -1,11 +1,20 @@
 import 'package:flutter/material.dart';
 
+import './screens/recently_played_playlists/chill.dart';
+
 class RecentlyPlayed extends StatefulWidget {
   @override
   _RecentlyPlayedState createState() => _RecentlyPlayedState();
 }
 
 class _RecentlyPlayedState extends State<RecentlyPlayed> {
+  _chillButton() {
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => Chill()),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -39,7 +48,7 @@ class _RecentlyPlayedState extends State<RecentlyPlayed> {
                     Container(
                       padding: EdgeInsets.only(right: 49, left: 10),
                       child: TextButton(
-                        onPressed: null,
+                        onPressed: _chillButton,
                         child: Text(
                           'Chill',
                           style: TextStyle(
@@ -121,7 +130,7 @@ class _RecentlyPlayedState extends State<RecentlyPlayed> {
                     Container(
                       padding: EdgeInsets.only(right: 49, left: 10),
                       child: TextButton(
-                        onPressed: null,
+                        onPressed: _chillButton,
                         child: Text(
                           'Hills',
                           style: TextStyle(
