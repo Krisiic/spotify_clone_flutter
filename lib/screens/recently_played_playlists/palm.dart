@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:spotify_ui_clone/main.dart';
 
 class Palm extends StatefulWidget {
   @override
@@ -24,6 +25,13 @@ class _PalmState extends State<Palm> {
 class HeaderNavbarPlaylists extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    _backButton() {
+      Navigator.push(
+        context,
+        MaterialPageRoute(builder: (context) => MyApp()),
+      );
+    }
+
     return Row(
       children: <Widget>[
         //Header Navbar
@@ -31,16 +39,19 @@ class HeaderNavbarPlaylists extends StatelessWidget {
           color: Colors.black,
           height: 100,
           width: 392.4,
-          padding: EdgeInsets.only(top: 20, left: 20, right: 20),
+          padding: EdgeInsets.only(top: 20, left: 0, right: 0),
           child: Row(
             children: [
-              Icon(
-                Icons.arrow_back,
-                color: Colors.white,
-                size: 20,
+              TextButton(
+                onPressed: _backButton,
+                child: Icon(
+                  Icons.arrow_back,
+                  color: Colors.white,
+                  size: 20,
+                ),
               ),
               Container(
-                margin: EdgeInsets.only(left: 280),
+                margin: EdgeInsets.only(left: 255),
                 child: Row(
                   children: [
                     Container(
