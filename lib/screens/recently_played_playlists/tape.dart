@@ -13,6 +13,7 @@ class _TapeState extends State<Tape> {
         body: Column(
           children: [
             HeaderNavbarPlaylists(),
+            MainPlaylistScreen(),
           ],
         ),
       ),
@@ -62,6 +63,63 @@ class HeaderNavbarPlaylists extends StatelessWidget {
           ),
         ),
       ],
+    );
+  }
+}
+
+class MainPlaylistScreen extends StatelessWidget {
+  const MainPlaylistScreen({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      height: 330,
+      color: Colors.black,
+      width: double.infinity,
+      child: Column(
+        children: <Widget>[
+          Image.asset(
+            './assets/images/recently_played/playlisttwo.jpg',
+            height: 180,
+            width: 180,
+          ),
+          Container(
+            padding: EdgeInsets.only(top: 10),
+            child: Column(
+              children: [
+                Text(
+                  'Tape',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 28,
+                  ),
+                ),
+                Container(
+                  padding: EdgeInsets.only(top: 5),
+                  child: Text(
+                    'By Spotify',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 10,
+                    ),
+                  ),
+                ),
+                Container(
+                  padding: EdgeInsets.only(top: 15),
+                  child: FloatingActionButton(
+                    backgroundColor: Colors.green,
+                    onPressed: null,
+                    child:
+                        Icon(Icons.play_arrow, color: Colors.black, size: 20),
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ],
+      ),
     );
   }
 }

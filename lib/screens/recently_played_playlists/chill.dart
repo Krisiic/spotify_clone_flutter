@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:spotify_ui_clone/recentlyPlayed.dart';
 
 class Chill extends StatefulWidget {
   const Chill({Key? key}) : super(key: key);
@@ -33,16 +34,19 @@ class HeaderNavbarPlaylists extends StatelessWidget {
           color: Colors.black,
           height: 100,
           width: 392.4,
-          padding: EdgeInsets.only(top: 20, left: 20, right: 20),
+          padding: EdgeInsets.only(top: 20, left: 0, right: 0),
           child: Row(
             children: [
-              Icon(
-                Icons.arrow_back,
-                color: Colors.white,
-                size: 20,
+              TextButton(
+                onPressed: null,
+                child: Icon(
+                  Icons.arrow_back,
+                  color: Colors.white,
+                  size: 20,
+                ),
               ),
               Container(
-                margin: EdgeInsets.only(left: 280),
+                margin: EdgeInsets.only(left: 255),
                 child: Row(
                   children: [
                     Container(

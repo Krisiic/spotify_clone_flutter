@@ -15,7 +15,7 @@ class _RecentlyPlayedState extends State<RecentlyPlayed> {
   _chillButton() {
     Navigator.push(
       context,
-      MaterialPageRoute(builder: (context) => Chill()),
+      MaterialPageRoute(builder: (context1) => Chill()),
     );
   }
 
