@@ -1,8 +1,32 @@
 import 'package:flutter/material.dart';
+import 'package:spotify_ui_clone/screens/artists_playlists/eminem.dart';
+import 'package:spotify_ui_clone/screens/artists_playlists/hairy_potter.dart';
+import 'package:spotify_ui_clone/screens/artists_playlists/wu_tang.dart';
 
 class Artists extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    _eminemClick() {
+      Navigator.push(
+        context,
+        MaterialPageRoute(builder: (context) => Eminem()),
+      );
+    }
+
+    _hairyPotterClick() {
+      Navigator.push(
+        context,
+        MaterialPageRoute(builder: (context) => HairyPotter()),
+      );
+    }
+
+    _wuTangClick() {
+      Navigator.push(
+        context,
+        MaterialPageRoute(builder: (context) => WuTang()),
+      );
+    }
+
     return Container(
       height: 236,
       color: Colors.black,
@@ -29,100 +53,109 @@ class Artists extends StatelessWidget {
                     ),
                     Row(
                       children: <Widget>[
-                        Container(
-                          child: Column(
-                            children: <Widget>[
-                              Container(
-                                margin: EdgeInsets.all(10),
-                                width: 100,
-                                height: 100,
-                                child: ClipRRect(
-                                  child: Image.asset(
-                                    './assets/images/artists/eminem.jpg',
-                                    width: 100,
-                                    height: 100,
+                        InkWell(
+                          onTap: (_eminemClick),
+                          child: Container(
+                            child: Column(
+                              children: <Widget>[
+                                Container(
+                                  margin: EdgeInsets.all(10),
+                                  width: 100,
+                                  height: 100,
+                                  child: ClipRRect(
+                                    child: Image.asset(
+                                      './assets/images/artists/eminem.jpg',
+                                      width: 100,
+                                      height: 100,
+                                    ),
+                                    borderRadius: BorderRadius.circular(50),
                                   ),
-                                  borderRadius: BorderRadius.circular(50),
-                                ),
-                                decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(50),
-                                ),
-                              ),
-                              Container(
-                                child: Text(
-                                  'Eminem',
-                                  style: TextStyle(
-                                    color: Colors.white,
-                                    fontSize: 16,
-                                    fontWeight: FontWeight.bold,
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(50),
                                   ),
                                 ),
-                              ),
-                            ],
+                                Container(
+                                  child: Text(
+                                    'Eminem',
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 16,
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
                           ),
                         ),
-                        Container(
-                          child: Column(
-                            children: <Widget>[
-                              Container(
-                                margin: EdgeInsets.all(10),
-                                width: 100,
-                                height: 100,
-                                child: ClipRRect(
-                                  child: Image.asset(
-                                    './assets/images/artists/hairy_potter.jpeg',
-                                    width: 100,
-                                    height: 100,
+                        InkWell(
+                          onTap: (_hairyPotterClick),
+                          child: Container(
+                            child: Column(
+                              children: <Widget>[
+                                Container(
+                                  margin: EdgeInsets.all(10),
+                                  width: 100,
+                                  height: 100,
+                                  child: ClipRRect(
+                                    child: Image.asset(
+                                      './assets/images/artists/hairy_potter.jpeg',
+                                      width: 100,
+                                      height: 100,
+                                    ),
+                                    borderRadius: BorderRadius.circular(50),
                                   ),
-                                  borderRadius: BorderRadius.circular(50),
-                                ),
-                                decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(50),
-                                ),
-                              ),
-                              Container(
-                                child: Text(
-                                  'Hairy Potter',
-                                  style: TextStyle(
-                                    color: Colors.white,
-                                    fontSize: 16,
-                                    fontWeight: FontWeight.bold,
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(50),
                                   ),
                                 ),
-                              ),
-                            ],
+                                Container(
+                                  child: Text(
+                                    'Hairy Potter',
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 16,
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
                           ),
                         ),
-                        Container(
-                          child: Column(
-                            children: <Widget>[
-                              Container(
-                                margin: EdgeInsets.all(10),
-                                width: 100,
-                                height: 100,
-                                child: ClipRRect(
-                                  child: Image.asset(
-                                    './assets/images/artists/wu_tang.png',
-                                    width: 100,
-                                    height: 100,
+                        InkWell(
+                          onTap: (_wuTangClick),
+                          child: Container(
+                            child: Column(
+                              children: <Widget>[
+                                Container(
+                                  margin: EdgeInsets.all(10),
+                                  width: 100,
+                                  height: 100,
+                                  child: ClipRRect(
+                                    child: Image.asset(
+                                      './assets/images/artists/wu_tang.png',
+                                      width: 100,
+                                      height: 100,
+                                    ),
+                                    borderRadius: BorderRadius.circular(50),
                                   ),
-                                  borderRadius: BorderRadius.circular(50),
-                                ),
-                                decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(50),
-                                ),
-                              ),
-                              Container(
-                                child: Text(
-                                  'Wu Tang',
-                                  style: TextStyle(
-                                    color: Colors.white,
-                                    fontSize: 16,
-                                    fontWeight: FontWeight.bold,
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(50),
                                   ),
                                 ),
-                              ),
-                            ],
+                                Container(
+                                  child: Text(
+                                    'Wu Tang',
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 16,
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
                           ),
                         ),
                       ],
