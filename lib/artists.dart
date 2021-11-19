@@ -4,7 +4,7 @@ class Artists extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 231,
+      height: 236,
       color: Colors.black,
       child: Column(
         children: [
@@ -17,7 +17,7 @@ class Artists extends StatelessWidget {
                 child: Column(
                   children: [
                     Container(
-                      padding: EdgeInsets.only(bottom: 20, right: 190),
+                      padding: EdgeInsets.only(bottom: 10, right: 190, top: 10),
                       child: Text(
                         'Popular Artists',
                         style: TextStyle(

@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
             BottomNavigationBarItem(
               icon: Icon(
                 Icons.home,
-                size: 30,
+                size: 29,
                 color: Colors.white,
               ),
               label: '',
@@ -28,7 +28,7 @@ class MyApp extends StatelessWidget {
             BottomNavigationBarItem(
               icon: Icon(
                 Icons.search_outlined,
-                size: 30,
+                size: 29,
                 color: Colors.white,
               ),
               label: '',
@@ -36,7 +36,7 @@ class MyApp extends StatelessWidget {
             BottomNavigationBarItem(
               icon: Icon(
                 Icons.library_add_outlined,
-                size: 30,
+                size: 29,
                 color: Colors.white,
               ),
               label: '',
